@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <EditText
+        android:id="@+id/Input1"
+        android:layout_width="381dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/Input2"
+        android:layout_below="@id/Input1"
+        android:layout_width="381dp"
+        android:layout_height="55dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Input2"
+        android:layout_margin="29dp"
+        android:text="ADD"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/Input1"
+        android:layout_below="@id/Input2"
+        android:layout_margin="29dp"
+        android:text="SUB"
+        android:textSize="24dp"
+        />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAdd"
+        android:layout_alignLeft="@id/Input1"
+        android:text="Result is:"
+        android:textSize="24dp"
+        />
+
+</RelativeLayout>
